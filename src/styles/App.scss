@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'NanumSquareOTFB', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.btn {
+  padding: 11px 15px;
+  border-radius: 2px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #00c7f3;
+  cursor: pointer;
+
+  &.active,
+  &:hover {
+    color: #ffffff;
+    background-color: #00c7f3;
+  }
+
+  &.mr8 {
+    margin-right: 8px;
+  }
+}
+
+.flex-wrapper {
+  display: flex;
+}
+
+.problem-container {
+  width: calc(50% - 4.5px);
+  display: flex;
+  flex-direction: column;
+
+  &.border {
+    margin-right: 8px;
+    border-right: 1px solid #e0e0e0;
+  }
+
+  .title {
+    height: 48px;
+    font-size: 14px;
+    color: #4c4c4c;
+    line-height: 48px;
+    padding-left: 25px;
+    background-color: #ffffff;
+    margin-bottom: 3px;
+
+    &.center {
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+
+  .content {
+    padding: 6px 14px;
+    background-color: #ffffff;
+    margin-bottom: 8px;
+    font-size: 14px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &__desc {
+      display: flex;
+      justify-content: space-between;
+      line-height: 41px;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #f5f5f5;
+
+      &__type {
+        color: #9f9f9f;
+        padding-left: 32px;
+      }
+  
+      &__unit {
+        min-width: 330px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #4c4c4c;
+      }
+    }
+
+    &__problem {
+      display: flex;
+      padding-bottom: 16px;
+      p {
+        padding: 0 38px 0 41px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #02c7f2;
+      }
+    }
+
+    &.no-result {
+      font-size: 14px;
+      font-weight: 500;
+      text-align: center;
+      color: #9f9f9f;
+      flex: 1;
+      padding-top: 309px;
+
+      p {
+        line-height: 2;
+      }
+
+      span {
+        padding: 5px 10.5px;
+        border-radius: 2px;
+        border: solid 1px #e8e8e8;
+        color: #00c7f3;
+        font-size: 13px;
+      }
+    }
+  }
+}
